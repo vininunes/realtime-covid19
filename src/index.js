@@ -1,7 +1,8 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
  
 const start = async () => {
-    const browser = await puppeteer.launch( { headless: true } );
+    const browser = await puppeteer.launch( { headless: false } );
     const page = await browser.newPage();
     await page.goto('https://covid.saude.gov.br/');
    
