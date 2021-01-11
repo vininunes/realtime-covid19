@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
- 
+
 const start = async () => {
     const browser = await puppeteer.launch( { headless: false } );
     const page = await browser.newPage();
@@ -61,16 +61,20 @@ const start = async () => {
     });
     
     await browser.close();
-    console.log(container);
-    writeFile(JSON.stringify(container, null, 4));
+    await unlink();
+    await writeFile(JSON.stringify(container, null, 4));
 };
-
 
 const writeFile = (data) => {
     fs.writeFile('./db/covid_datas.json', data, err => {
-        err ? console.log("err") : console.log("sucess");
+        err ? console.log('err (WriteFile)') : console.log('Write File!');
     });
+}
 
-};
+const unlink = () => {
+    fs.unlink('./db/covid_datas.json', err => {
+        err ? console.log('Unlink err!') : console.log('Unlink sucess!');
+    });
+}
 
 start();

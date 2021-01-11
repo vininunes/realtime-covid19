@@ -10,6 +10,24 @@
         "sul": {
             "cases": [
                 "Casos",
+                "1.474.336"
+            ],
+            "deaths": [
+                "Óbitos",
+                "23.825"
+            ],
+            "incidence": [
+                "Incidência/100mil hab.",
+                "4918,4"
+            ],
+            "mortality": [
+                "Mortalidade/100mil hab",
+                "79,5"
+            ]
+        },
+        "centro_oeste": {
+            "cases": [
+                "Casos",
                 "907.827"
             ],
             "deaths": [
@@ -25,7 +43,7 @@
                 "113,3"
             ]
         },
-        "centro_oeste": {
+        "nordeste": {
             "cases": [
                 "Casos",
                 "1.966.864"
@@ -43,43 +61,7 @@
                 "85,7"
             ]
         },
-        "nordeste": {
-            "cases": [
-                "Casos",
-                "893.910"
-            ],
-            "deaths": [
-                "Óbitos",
-                "18.773"
-            ],
-            "incidence": [
-                "Incidência/100mil hab.",
-                "4850,0"
-            ],
-            "mortality": [
-                "Mortalidade/100mil hab",
-                "101,9"
-            ]
-        },
         "sudeste": {
-            "cases": [
-                "Casos",
-                "1.474.336"
-            ],
-            "deaths": [
-                "Óbitos",
-                "23.825"
-            ],
-            "incidence": [
-                "Incidência/100mil hab.",
-                "4918,4"
-            ],
-            "mortality": [
-                "Mortalidade/100mil hab",
-                "79,5"
-            ]
-        },
-        "norte": {
             "cases": [
                 "Casos",
                 "2.862.853"
@@ -95,6 +77,24 @@
             "mortality": [
                 "Mortalidade/100mil hab",
                 "105,4"
+            ]
+        },
+        "norte": {
+            "cases": [
+                "Casos",
+                "893.910"
+            ],
+            "deaths": [
+                "Óbitos",
+                "18.773"
+            ],
+            "incidence": [
+                "Incidência/100mil hab.",
+                "4850,0"
+            ],
+            "mortality": [
+                "Mortalidade/100mil hab",
+                "101,9"
             ]
         }
     }
