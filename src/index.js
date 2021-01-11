@@ -62,6 +62,15 @@ const start = async () => {
     
     await browser.close();
     console.log(container);
+    writeFile(JSON.stringify(container, null, 4));
+};
+
+
+const writeFile = (data) => {
+    fs.writeFile('./db/covid_datas.json', data, err => {
+        err ? console.log("err") : console.log("sucess");
+    });
+
 };
 
 start();
