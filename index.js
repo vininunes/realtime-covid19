@@ -1,11 +1,20 @@
 const puppeteer = require('puppeteer');
  
 const start = async () => {
-    const browser = await puppeteer.launch( { headless: false } );
+    const browser = await puppeteer.launch( { headless: true } );
     const page = await browser.newPage();
-    await page.goto('https://news.google.com/covid19/map?hl=pt-BR&gl=BR&ceid=BR%3Apt-419&mid=%2Fm%2F09c7w0');
+    await page.goto('https://covid.saude.gov.br/');
    
-    // await browser.close();
+    const container = await page.evaluate(() => {
+        const recoveredCases = document.querySelectorAll(".lb-total.tp-geral")[0].innerText;
+        const accompaniment = document.querySelectorAll(".lb-total.tp-geral")[1].innerText;
+        const accumulated = document.querySelectorAll(".lb-total.tp-geral")[2].innerText;
+        return [recoveredCases, accompaniment]
+    });
+    
+    console.log(container[0]);
+    console.log(container[1]);
+    await browser.close();
 };
 
 start();
