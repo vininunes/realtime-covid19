@@ -61,13 +61,35 @@ const start = async () => {
     });
     
     await browser.close();
-    await writeFile(JSON.stringify(container, null, 4));
+    const newData = await verifyUndefinedData(container);
+    await writeFile(JSON.stringify(newData, null, 4));
 };
+
+const verifyUndefinedData = (data) => {
+    // console.table(data);
+    for(let i in data){
+        if(!data[i])
+            data[i] = "Não divulgado!";
+        if(typeof(data[i]) === "object"){
+            for(let j in data[i]){
+                if(!data[i][j])
+                    data[i][j] = "Não divulgado!";
+                if(typeof(data[i][j]) === "object"){
+                    for(let z in data[i][j]){
+                        if(!data[i][j][z])
+                            data[i][j][z] = "Não divulgado!";
+                    }
+                }
+            }
+        }
+    }
+    return data;
+}
 
 const writeFile = (data) => {
     fs.writeFile('./db/covid_datas.json', data, err => {
         err ? console.log('err (WriteFile)') : console.log('Write File!');
     });
-}
+};
 
 start();
