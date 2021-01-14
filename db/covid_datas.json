@@ -1,100 +1,100 @@
 {
-    "updateDate": "12/01/2021 19:00",
-    "recoveredCases": "7.273.707",
-    "accompaniment": "717.240",
-    "accumulated": "8.195.637",
-    "newCases": "64.025",
-    "accidentalDeaths": "204.690",
-    "newDeaths": "1.110",
+    "updateDate": "13/01/2021 19:10",
+    "recoveredCases": "7.277.195",
+    "accompaniment": "713.752",
+    "accumulated": "8.256.536",
+    "newCases": "",
+    "accidentalDeaths": "205.964",
+    "newDeaths": "",
     "regs": {
         "sul": {
             "cases": [
                 "Casos",
-                "917.942"
+                "923.672"
             ],
             "deaths": [
                 "Óbitos",
-                "18.585"
+                "18.667"
             ],
             "incidence": [
                 "Incidência/100mil hab.",
-                "5632,6"
+                "5667,7"
             ],
             "mortality": [
                 "Mortalidade/100mil hab",
-                "114,0"
+                "114,5"
             ]
         },
         "centro_oeste": {
             "cases": [
                 "Casos",
-                "1.978.131"
+                "1.989.262"
             ],
             "deaths": [
                 "Óbitos",
-                "49.144"
+                "49.286"
             ],
             "incidence": [
                 "Incidência/100mil hab.",
-                "3466,0"
+                "3485,6"
             ],
             "mortality": [
                 "Mortalidade/100mil hab",
-                "86,1"
+                "86,4"
             ]
         },
         "nordeste": {
             "cases": [
                 "Casos",
-                "904.284"
+                "909.594"
             ],
             "deaths": [
                 "Óbitos",
-                "18.980"
+                "19.095"
             ],
             "incidence": [
                 "Incidência/100mil hab.",
-                "4906,3"
+                "4935,1"
             ],
             "mortality": [
                 "Mortalidade/100mil hab",
-                "103,0"
+                "103,6"
             ]
         },
         "sudeste": {
             "cases": [
                 "Casos",
-                "1.498.130"
+                "1.507.212"
             ],
             "deaths": [
                 "Óbitos",
-                "24.211"
+                "24.380"
             ],
             "incidence": [
                 "Incidência/100mil hab.",
-                "4997,8"
+                "5028,1"
             ],
             "mortality": [
                 "Mortalidade/100mil hab",
-                "80,8"
+                "81,3"
             ]
         },
         "norte": {
             "cases": [
                 "Casos",
-                "2.897.150"
+                "2.926.796"
             ],
             "deaths": [
                 "Óbitos",
-                "93.770"
+                "94.536"
             ],
             "incidence": [
                 "Incidência/100mil hab.",
-                "3278,4"
+                "3311,9"
             ],
             "mortality": [
                 "Mortalidade/100mil hab",
-                "106,1"
+                "107,0"
             ]
         }
     }
